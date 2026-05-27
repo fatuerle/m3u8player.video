@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Streaming Blog | M3U8 & HLS Guides - M3U8Player.video</title>
+  <meta name="description" content="Discover the latest tips, guides, and tutorials on HLS streaming, M3U8 playlists, and video playback optimization." />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://m3u8player.video/blog/index.html" />
+  <meta property="og:title" content="Streaming Blog | M3U8 & HLS Guides" />
+  <meta property="og:description" content="Deep dive into HLS streaming, M3U8 playlists, and video player optimization guides." />
+  <meta property="og:image" content="https://m3u8player.video/assets/img/og-image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://m3u8player.video/blog/index.html" />
+  <meta property="twitter:title" content="Streaming Blog | M3U8 & HLS Guides" />
+  <meta property="twitter:description" content="Latest guides on HLS streaming and M3U8 playlists." />
+  <meta property="twitter:image" content="https://m3u8player.video/assets/img/og-image.png" />
+
+  <link rel="canonical" href="https://m3u8player.video/blog/" />
+
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .blog-card {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    .blog-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .blog-category {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent2);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.6rem;
+    }
+    .blog-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+    }
+    .blog-excerpt {
+      font-size: 0.92rem;
+      color: var(--text2);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    .blog-readmore {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent2);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .blog-card:hover .blog-readmore {
+      color: var(--accent);
+    }
+    .blog-readmore svg {
+      width: 14px;
+      height: 14px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: transform 0.2s;
+    }
+    .blog-card:hover .blog-readmore svg {
+      transform: translateX(3px);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="../">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      M3U8Player.video
+    </a>
+    <button class="hamburger" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="../#how-to-use">How to Use</a>
+      <a href="../#faq">FAQ</a>
+      <a href="index.html" class="nav-active">Blog</a>
+      <a href="../about.html">About</a>
+      <a href="../privacy-policy.html">Privacy</a>
+      <a href="../contact.html">Contact</a>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">Theme</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" style="padding-bottom: 1rem;">
+  <div class="hero-badge">
+    Guides & Tutorials
+  </div>
+  <h1 style="font-size: clamp(1.6rem, 3vw, 2.4rem);">Streaming <em>Knowledge Base</em></h1>
+  <p class="hero-sub">Learn everything you need to know about HLS streaming, M3U8 playlists, and troubleshooting video playback issues.</p>
+</section>
+
+<div class="content-section" style="max-width: 1100px;">
+  <div class="blog-grid">
+
+    <a href="what-is-m3u8-file.html" class="player-card blog-card" style="padding: 1.5rem;">
+      <div class="blog-category">Guide</div>
+      <h2 class="blog-title">What is an M3U8 File? The Ultimate Guide to HLS Playlists</h2>
+      <p class="blog-excerpt">Discover what an M3U8 file is, how HTTP Live Streaming (HLS) works, and the key differences between M3U and M3U8 formats.</p>
+      <div class="blog-readmore">
+        Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+
+    <a href="how-to-fix-cors.html" class="player-card blog-card" style="padding: 1.5rem;">
+      <div class="blog-category">Troubleshooting</div>
+      <h2 class="blog-title">How to Fix CORS Errors When Playing M3U8 Streams</h2>
+      <p class="blog-excerpt">Are you getting a cross-origin resource sharing (CORS) block? Learn why it happens and step-by-step methods to fix it.</p>
+      <div class="blog-readmore">
+        Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+
+    </div>
+</div>
+
+<div class="ad-below">
+  <div class="ad-slot" data-ad-slot="blog-index-bottom" aria-label="Advertisement slot"></div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="../">
+        <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        M3U8Player.video
+      </a>
+      <p>The fastest free online HLS &amp; M3U8 video stream player. No install, no sign-up.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Tools</div>
+      <div class="footer-links">
+        <a href="../">M3U8 Player</a>
+        <a href="what-is-m3u8-file.html">M3U vs M3U8</a>
+        <a href="how-to-fix-cors.html">Fix CORS Errors</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <div class="footer-links">
+        <a href="../about.html">About</a>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../terms-of-use.html">Terms of Use</a>
+        <a href="../contact.html">Contact</a>
+        <a href="index.html">Blog</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <span>&copy; <span id="currentYear"></span> M3U8Player.video - All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="../assets/js/site-config.js" defer></script>
+<script src="../assets/js/adsense-loader.js" defer></script>
+<script src="../assets/js/app-clean.js" defer></script>
+</body>
+</html>

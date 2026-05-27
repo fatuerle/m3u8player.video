@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Disallow: /de/
+Disallow: /es/
+Disallow: /fr/
+Disallow: /ja/
+Disallow: /pt/
+Disallow: /ru/
+Disallow: /zh-cn/
+Disallow: /zh-tw/
+Disallow: /index.new.html
+Disallow: /sitemap.backup.xml
+Disallow: /robots.backup.txt
+Disallow: /write_test.txt
+
+Sitemap: https://m3u8player.video/sitemap.xml

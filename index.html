@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M3U8 Player Online - Free HLS Video Stream Player | M3U8Player.video</title>
+  <meta name="description" content="Free online M3U8 player. Instantly test and play any HLS video stream in your browser. No install needed. Supports .m3u8 and .m3u links with local playback history." />
+  <meta name="keywords" content="m3u8 player, m3u8 player online, hls player, play m3u8 online, test m3u8 stream, hls video player, m3u8 link player" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://m3u8player.video/" />
+
+  <link rel="alternate" hreflang="x-default" href="https://m3u8player.video/" />
+  <link rel="alternate" hreflang="en" href="https://m3u8player.video/" />
+
+  <meta property="og:title" content="M3U8 Player Online - Free HLS Video Stream Player" />
+  <meta property="og:description" content="Instantly test and play any M3U8 / HLS video stream in your browser for free." />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://m3u8player.video/" />
+  <meta property="og:title" content="M3U8 Player Online - Free HLS Video Stream Player" />
+  <meta property="og:description" content="The fastest free online HLS & M3U8 video stream player. Play your links instantly without installation or sign-up." />
+  <meta property="og:image" content="https://m3u8player.video/assets/img/og-image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://m3u8player.video/" />
+  <meta property="twitter:title" content="M3U8 Player Online - Free HLS Video Stream Player" />
+  <meta property="twitter:description" content="The fastest free online HLS & M3U8 video stream player. No install, no sign-up." />
+  <meta property="twitter:image" content="https://m3u8player.video/assets/img/og-image.png" />
+
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "M3U8Player.video",
+        "url": "https://m3u8player.video/"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "M3U8 Player Online",
+        "url": "https://m3u8player.video/",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Free browser-based HLS and M3U8 video stream player. No install, no sign-up. Paste any .m3u8 link and play it instantly.",
+        "featureList": "HLS playback, Adaptive bitrate streaming, Playback history, Picture-in-Picture, Dark mode"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is my M3U8 stream not playing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most common cause is a CORS restriction on the source server. Web browsers block requests to a different domain unless the server gives permission."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this M3U8 player free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, M3U8Player.video is completely free. No sign-up or registration is required to play your HLS streams online."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it support mobile devices and iOS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Our player supports native HLS playback on iOS Safari and modern Android browsers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How to download an M3U8 stream as MP4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "M3U8 files are only playlists. You need a tool like FFmpeg or VLC to download segments and merge them into an MP4 file."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I play M3U8 links on VLC Media Player?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Open VLC, go to Media > Open Network Stream, and paste your .m3u8 URL."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between HLS and DASH?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HLS uses M3U8 and is widely supported by Apple. DASH uses .mpd manifests and is often used for DRM-protected content."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does my video keep buffering or lagging?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Buffering occurs when your internet speed is slower than the video's bitrate, or when the source server is overloaded."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use this for IPTV M3U playlists?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This tool is designed for individual M3U8 HLS stream links. For massive IPTV playlists, we recommend specialized IPTV software."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are M3U8 links safe to open?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "M3U8 files are plain text documents and do not contain executable code. However, you should only play links from trusted sources."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to install any plugins?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. This player uses HLS.js, which works natively in any modern Chrome, Firefox, or Edge browser."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="/">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      M3U8Player.video
+    </a>
+    <button class="hamburger" id="menuToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="/#how-to-use">How to Use</a>
+      <a href="/#faq">FAQ</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">Theme</button>
+    </div>
+  </div>
+</nav>
+
+<div class="ad-leaderboard">
+  <div class="ad-slot" data-ad-slot="top" aria-label="Advertisement slot"></div>
+</div>
+
+<section class="hero">
+  <div class="hero-badge">
+    <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+    Free | No sign-up | No install
+  </div>
+  <h1>Free Online <em>M3U8 &amp; HLS</em><br>Video Stream Player</h1>
+  <p class="hero-sub">Paste any <code>.m3u8</code> link and play it instantly in your browser. Test live streams, VOD, and HLS video without any software.</p>
+</section>
+
+<div class="player-wrap">
+  <div>
+    <div class="player-card">
+      <div class="input-section">
+        <div class="input-row">
+          <input class="url-input" id="streamUrl" type="url"
+            placeholder="https://example.com/stream/playlist.m3u8"
+            autocomplete="off" spellcheck="false" />
+          <button class="btn-play" id="playBtn" aria-label="Play stream">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            Play
+          </button>
+        </div>
+        <div class="samples-row">
+          <span style="font-size:.72rem;color:var(--text3);align-self:center;">Try sample:</span>
+          <button class="sample-btn" data-url="https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8">Apple BipBop</button>
+          <button class="sample-btn" data-url="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8">Sintel Film</button>
+          <button class="sample-btn" data-url="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8">Big Buck Bunny</button>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <video id="video" controls playsinline></video>
+        <div class="video-placeholder" id="placeholder">
+          <div class="play-icon-big">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span>Paste an M3U8 link above and click Play</span>
+        </div>
+      </div>
+
+      <div class="status-bar">
+        <div class="status-dot" id="statusDot"></div>
+        <span class="status-text" id="statusText">Ready - waiting for stream URL</span>
+        <div style="flex:1"></div>
+        <button id="pipBtn" title="Picture-in-Picture"
+          style="background:none;border:none;color:var(--text3);cursor:pointer;font-size:.75rem;font-family:var(--font-mono);display:none">
+          PiP
+        </button>
+        <button id="resetBtn"
+          style="background:none;border:none;color:var(--text3);cursor:pointer;font-size:.75rem;font-family:var(--font-mono);">
+          Clear
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="player-sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-title">Recent Streams</div>
+      <div class="history-list" id="historyList">
+        <span class="history-empty">No history yet. Played links appear here.</span>
+      </div>
+      <button class="btn-clear" id="clearHistory">Clear history</button>
+    </div>
+  </div>
+</div>
+
+<div class="cors-warn" id="corsWarn">
+  <div class="cors-box">
+    <strong>Stream could not load - possible CORS restriction.</strong>
+    The source server may block browser-based playback. Try installing the
+    <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf" target="_blank" rel="noopener">Allow CORS Chrome Extension</a>,
+    or see our <a href="blog/how-to-fix-cors.html">full CORS fix guide</a>.
+    This tool never proxies your streams. All playback is direct client-side.
+  </div>
+</div>
+
+<div class="ad-below">
+  <div class="ad-slot" data-ad-slot="bottom" aria-label="Advertisement slot"></div>
+</div>
+
+<div class="content-section">
+  <h2 id="how-to-use">How to Use This M3U8 Player</h2>
+  <p>Playing an M3U8 stream takes only seconds. No registration, no plugin, and no software download is required. Everything runs directly in your browser using the HLS.js library.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text"><strong>Copy your M3U8 link.</strong> This is a URL ending in <code>.m3u8</code> or <code>.m3u</code>.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text"><strong>Paste it into the input field</strong> above and click the blue <strong>Play</strong> button.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text"><strong>Control playback</strong> using the standard video controls.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-text"><strong>Access recent streams</strong> from the history panel on the right.</div>
+    </div>
+  </div>
+
+  <h2>What Is an M3U8 File?</h2>
+  <p>An M3U8 file is a plain-text playlist format used by <strong>HTTP Live Streaming (HLS)</strong>, the streaming protocol developed by Apple. Instead of delivering one giant video file, HLS splits the video into small segments and lists them in an M3U8 playlist.</p>
+
+  <h3>M3U vs M3U8 - What's the Difference?</h3>
+  <p>The original <code>.m3u</code> format uses plain ASCII encoding. The <code>.m3u8</code> extension indicates the file uses <strong>UTF-8 encoding</strong>, which supports international characters and is required by the HLS standard.</p>
+
+  <h2 id="faq">Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      Why is my M3U8 stream not playing?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      The most common cause is a <strong>CORS (Cross-Origin Resource Sharing) restriction</strong> on the source server. Web browsers block requests to a different domain unless the server gives permission. Try the CORS browser extension linked in our warning message.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      Is this M3U8 player free to use?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      Yes, M3U8Player.video is completely free. No sign-up, registration, or subscription is required to test and play your HLS streams online.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      Does it support mobile devices and iOS?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      Absolutely. Our player is mobile-friendly and supports <strong>native HLS playback</strong> on iOS Safari and modern Android browsers. Play your streams on the go without installing apps.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      How to download an M3U8 stream as MP4?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      Since M3U8 files are only playlists, you cannot "convert" them directly. You need a tool like <strong>FFmpeg</strong> or <strong>VLC</strong> to download all the video segments listed in the playlist and merge them into a single MP4 file.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      Can I play M3U8 links on VLC Media Player?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      Yes. Open VLC, go to <strong>Media > Open Network Stream</strong>, and paste your <code>.m3u8</code> URL. VLC is excellent for playing HLS streams if you prefer a desktop application over a web player.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      What is the difference between HLS and DASH?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      <strong>HLS (HTTP Live Streaming)</strong> uses the M3U8 format and is widely supported by Apple. <strong>DASH (MPEG-DASH)</strong> uses XML-based <code>.mpd</code> manifests and is often used for DRM-protected content. Both use adaptive bitrate streaming to ensure smooth playback.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      Why does my video keep buffering or lagging?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      Buffering occurs when your internet speed is slower than the video's bitrate, or when the source server is overloaded. Adaptive bitrate HLS streams should automatically switch to a lower quality to prevent this.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      Can I use this for IPTV M3U playlists?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      This tool is designed for individual <strong>M3U8 HLS stream links</strong>. For massive IPTV playlists containing hundreds of channels, we recommend specialized IPTV software, though you can test individual channel links here.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      Are M3U8 links safe to open?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      M3U8 files are plain text documents and do not contain executable code. However, you should only play links from trusted sources to avoid tracking or exposure to inappropriate content.
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" role="button" tabindex="0">
+      Do I need to install any plugins?
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+    <div class="faq-a">
+      No. This player uses <strong>HLS.js</strong>, a JavaScript library that works natively in any modern Chrome, Firefox, or Edge browser without requiring Flash or any other plugins.
+    </div>
+  </div>
+</div>
+
+<div class="disclaimer-banner" id="disclaimer">
+  <strong>Disclaimer:</strong> M3U8Player.video is a browser-based tool for testing and playing user-provided HLS/M3U8 video streams. We do not host any video content.
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="/">
+        <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+        M3U8Player.video
+      </a>
+      <p>The fastest free online HLS &amp; M3U8 video stream player. No install, no sign-up.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Tools</div>
+      <div class="footer-links">
+        <a href="/">M3U8 Player</a>
+        <a href="blog/what-is-m3u8-file.html">M3U vs M3U8</a>
+        <a href="blog/how-to-fix-cors.html">Fix CORS Errors</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog/index.html">Blog</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <span>&copy; <span id="currentYear"></span> M3U8Player.video - All rights reserved.</span>
+  </div>
+</footer>
+
+<div id="cookie-banner">
+  <span>We use cookies for analytics and to display ads. By continuing you accept our <a href="privacy-policy.html" style="color:var(--accent2)">Privacy Policy</a>.</span>
+  <div style="display:flex; gap:.5rem; align-items:center;">
+    <button class="btn-cookie" id="cookieDecline">Decline</button>
+    <button class="btn-cookie" id="cookieAccept">Accept</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.8/dist/hls.min.js"></script>
+<script src="assets/js/site-config.js" defer></script>
+<script src="assets/js/adsense-loader.js" defer></script>
+<script src="assets/js/app-clean.js" defer></script>
+</body>
+</html>
